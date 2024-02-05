@@ -5,155 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9be182f0-f00f-4201-86aa-08b9589d916b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.github/FUNDING.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Menu.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Menu2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Menu3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Procfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/Ara.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/Banate.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/Buenos-dias-2.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/DiagnosticadoConGay.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/Elmo.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/Epico.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/Es putoo.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/Feliz cumple.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/Fiesta1.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/Hola.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/La biblia.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/Murio.m4a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/Noche.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/Onichan.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/Te-amo.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/Tu.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/UwU.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/Yamete-kudasai.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/a.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/admin.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/baneado.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/bff.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/boanoite.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/boatarde.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/bot.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/cancion.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/chica lgante.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/dylan1.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/fiesta.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/gay2.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/gemi2.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/hentai.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/insultar.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/maau1.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/menu.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/navidad.m4a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/nopapu.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/oh_tio.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/ora.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/otaku.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/pato.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/queno.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/rawr.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/shitpost.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/siu.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/toma.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/vengo.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/vete a la verga.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/viernes.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/vivan.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ookla-speedtest.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/descargas-facebook.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/descargas-instagram.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/descargas-tiktok.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/gc-link.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/gc-link.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/info-bot.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/info-bot.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/info-speedtest.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/menu-audios.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/menu-audios.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/menus-menu.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/menus-menu.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/owner-bcgc.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/owner-bcgc.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/owner-broadcast.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/owner-broadcast.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/owner-broadcastchats.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/owner-broadcastchats.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/rpg-daily.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rpg-daily.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/render.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/replit.nix" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/+18.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/JSON/CristianoRonaldo.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/JSON/Messi.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/JSON/anime-akira.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/JSON/anime-akiyama.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/JSON/anime-anna.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/JSON/anime-asuna.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/JSON/anime-ayuzawa.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/JSON/anime-boruto.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/JSON/anime-chiho.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/JSON/anime-chitoge.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/JSON/anime-cosplay.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/JSON/anime-deidara.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/JSON/anime-eba.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/JSON/anime-elaina.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/JSON/anime-emilia.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/JSON/anime-erza.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/JSON/anime-hestia.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/JSON/anime-hinata.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/JSON/anime-inori.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/JSON/anime-isuzu.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/JSON/anime-itachi.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/JSON/anime-itori.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/JSON/anime-kaga.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/JSON/anime-kagura.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/JSON/anime-kaori.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/JSON/anime-keneki.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/JSON/anime-kotori.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/JSON/anime-kurumi.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/JSON/anime-madara.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/JSON/anime-mikasa.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/JSON/anime-miku.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/JSON/anime-minato.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/JSON/anime-naruto.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/JSON/anime-nezuko.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/JSON/anime-sagiri.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/JSON/anime-sakura.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/JSON/anime-sasuke.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/JSON/booty.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/JSON/chatgpt_indicciones.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/JSON/ecchi.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/JSON/furro.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/JSON/hentai.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/JSON/imagenlesbians.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/JSON/itzy.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/JSON/navidad.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/JSON/nsfwass.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/JSON/nsfwbdsm.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/JSON/nsfwcum.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/JSON/nsfwero.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/JSON/nsfwfemdom.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/JSON/nsfwfoot.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/JSON/nsfwglass.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/JSON/nsfwloli.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/JSON/nsfworgy.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/JSON/panties.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/JSON/pechos.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/JSON/pene.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/JSON/porno.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/JSON/tebaklagu.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/JSON/tetas.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/JSON/trapito.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/JSON/wprandom.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/JSON/yaoi.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/JSON/yuri.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/JSON/yuri2.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/kertas/.file" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/kertas/magernulis1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pictures/heroku-icon.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/trabas/traba1.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/trabas/traba2.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/trabas/traba3.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/trabas/traba4.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/trabas/traba5.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/handler.js" beforeDir="false" afterPath="$PROJECT_DIR$/handler.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/tool-sticker.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/tool-sticker.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -176,6 +30,7 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;ASKED_MARK_IGNORED_FILES_AS_EXCLUDED&quot;: &quot;true&quot;,
     &quot;Node.js.main.js.executor&quot;: &quot;Debug&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
@@ -243,11 +98,24 @@
       <workItem from="1707096198664" duration="1280000" />
       <workItem from="1707099515972" duration="138000" />
       <workItem from="1707100056466" duration="394000" />
-      <workItem from="1707100469972" duration="7353000" />
+      <workItem from="1707100469972" duration="7912000" />
+      <workItem from="1707120277703" duration="260000" />
+      <workItem from="1707120794622" duration="30000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/handler.js</url>
+          <line>71</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

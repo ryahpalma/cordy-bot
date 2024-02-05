@@ -75,33 +75,6 @@ export async function handler(chatUpdate) {
           premiumTime: 0,
         };
       }
-      const akinator = global.db.data.users[m.sender].akinator;
-      if (typeof akinator !== 'object') {
-        global.db.data.users[m.sender].akinator = {};
-      }
-      if (akinator) {
-        if (!('sesi' in akinator)) akinator.sesi = false;
-        if (!('server' in akinator)) akinator.server = null;
-        if (!('frontaddr' in akinator)) akinator.frontaddr = null;
-        if (!('session' in akinator)) akinator.session = null;
-        if (!('signature' in akinator)) akinator.signature = null;
-        if (!('question' in akinator)) akinator.question = null;
-        if (!('progression' in akinator)) akinator.progression = null;
-        if (!('step' in akinator)) akinator.step = null;
-        if (!('soal' in akinator)) akinator.soal = null;
-      } else {
-        global.db.data.users[m.sender].akinator = {
-          sesi: false,
-          server: null,
-          frontaddr: null,
-          session: null,
-          signature: null,
-          question: null,
-          progression: null,
-          step: null,
-          soal: null,
-        };
-      }
       const chat = global.db.data.chats[m.chat];
       if (typeof chat !== 'object') {
         global.db.data.chats[m.chat] = {};
@@ -126,7 +99,6 @@ export async function handler(chatUpdate) {
         if (!('antiTraba' in chat)) chat.antiTraba = false;
         if (!('antiForeign' in chat)) chat.antiForeign = false;
         if (!('antiporno' in chat)) chat.antiporno = false;
-        if (!('game' in chat)) chat.game = true;
         if (!('modoadmin' in chat)) chat.modoadmin = false;
         if (!isNumber(chat.expired)) chat.expired = 0;
       } else {

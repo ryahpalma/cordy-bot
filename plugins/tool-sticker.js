@@ -50,7 +50,6 @@ const handler = async (m, {conn, args, usedPrefix, command}) => {
 handler.help = ['sticker', 'gif'];
 handler.tags = ['sticker'];
 handler.command = /^sticker|gif$/i;
-handler.group = true;
 
 export default handler;
 
