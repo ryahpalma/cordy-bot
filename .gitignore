@@ -1,0 +1,10 @@
+.github
+node_modules
+session
+tmp
+plugins/supersecretlistener.js
+datasecret
+
+package-lock.json
+database.json
+yarn.lock
