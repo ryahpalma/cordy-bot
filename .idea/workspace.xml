@@ -5,9 +5,57 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9be182f0-f00f-4201-86aa-08b9589d916b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/_simsimi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/owner-announce.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/api.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/handler.js" beforeDir="false" afterPath="$PROJECT_DIR$/handler.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/_antitoxic.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/_antitoxic.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/_antitrabas.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/_antitrabas.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/_antiviewonce.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/_anti-view-once.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/_autosticker.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/_auto-sticker.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/_cmdWithMedia.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/_cmd-with-media.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/_detectEvents.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/_detect-events.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/_premium.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/_premium.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/config-functions.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/config-functions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/downloader-google-images.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/downloader-google-images.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/downloader-stickerpack.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/gc-invite.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/gc-invite.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/gc-list-warn.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/gc-list-warn.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/gc-promote.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/gc-promote.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/gc-remove-admin.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/gc-demote.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/gc-set-welcome.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/gc-set-welcome.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/gc-unwarn.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/gc-unwarn.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/gc-warn.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/gc-warn.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/info-owner.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/info-owner.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/menu-default.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/menu-default.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/menu-porn.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/menu-porn.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/owner-add-premium.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/owner-add-premium.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/owner-auto-admin.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/owner-auto-admin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/owner-chatgpt.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/owner-get-plugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/owner-get-plugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/owner-getmsg.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/owner-join.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/owner-join.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/owner-remove-premium.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/owner-remove-premium.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/owner-update.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/owner-update.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/random-fun-calculator.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/random-fun-calculator.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/random-kpop.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/random-kpop.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/random-neko.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/random-neko.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/random-say.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/random-say.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/random-top.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/random-top.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/tool-clima.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/tool-clima.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/tool-fix-messages.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/tool-fix-messages.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/tool-set-sticker-name.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/tool-set-sticker-name.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/tool-spamwa.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/plugins/tool-sticker.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/tool-sticker.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/tool-translate.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/tool-translate.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/avatar_contact.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/level_c.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/texts.otf" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,26 +76,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_MARK_IGNORED_FILES_AS_EXCLUDED&quot;: &quot;true&quot;,
-    &quot;Node.js.main.js.executor&quot;: &quot;Debug&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Ryan/Documents/Softwares/cordy&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
-    &quot;npm.start.executor&quot;: &quot;Debug&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\WebStorm 2023.3.2\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
+    "Node.js.main.js.executor": "Debug",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/Ryan/Documents/Softwares/cordy",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "yarn",
+    "npm.start.executor": "Debug",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\WebStorm 2023.3.2\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Ryan\Documents\Softwares\cordy\plugins" />
@@ -100,22 +148,13 @@
       <workItem from="1707100056466" duration="394000" />
       <workItem from="1707100469972" duration="7912000" />
       <workItem from="1707120277703" duration="260000" />
-      <workItem from="1707120794622" duration="30000" />
+      <workItem from="1707120794622" duration="405000" />
+      <workItem from="1707161364031" duration="255000" />
+      <workItem from="1707168119648" duration="21330000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/handler.js</url>
-          <line>71</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

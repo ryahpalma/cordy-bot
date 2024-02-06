@@ -24,9 +24,9 @@ const handler = async (m, {conn, usedPrefix, text}) => {
     conn.reply(m.chat, `Um novo administrador foi adicionado`, m);
   }
 };
-handler.help = ['set-admin'].map((v) => 'set-admin ' + v);
+handler.help = ['promote'].map((v) => 'promote ' + v);
 handler.tags = ['group'];
-handler.command = /^set-admin$/i;
+handler.command = /^promote$/i;
 handler.group = true;
 handler.admin = true;
 handler.botAdmin = true;

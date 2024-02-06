@@ -4,20 +4,20 @@ const handler = async (m, {conn, text, isMods, isOwner, isPrems}) => {
   if (enviando) return;
   enviando = true;
   try {
-    const link = text; //(m.quoted ? m.quoted.text ? m.quoted.text : text : text) || text;
-    if (!link || !link.match(linkRegex)) throw '*[❗] Link erroneo o faltante, ingrese el enlace de un grupo de WhatsApp.*\n\n*—◉ Ejemplo:*\n*◉ #join https://chat.whatsapp.com/FwEUGxkvZD85fIIp0gKyFC*';
+    const link = text;
+    if (!link || !link.match(linkRegex)) throw `Envie o comando e o link do grupo ${usedPrefix}join link do grupo_`;
     const [_, code] = link.match(linkRegex) || [];
     if (isPrems || isMods || isOwner || m.fromMe) {
       const res = await conn.groupAcceptInvite(code);
-      await conn.sendMessage(m.chat, {text: '*[ ✔️ ] El Bot ha ingresado con éxito al grupo.*'}, {quoted: m});
+      await conn.sendMessage(m.chat, {text: 'Entrei no grupo com sucesso'}, {quoted: m});
       enviando = false;
     } else {
-      conn.sendMessage(m.chat, {text: '*[❗] El link de su grupo fue enviado a mi propietario/a.*\n\n*—◉ Su grupo estará en evaluación y el propietario/a del Bot decidirá si agrega o no al Bot.*\n\n*—◉ Algunas de las razones por la cual su solicitud puede ser rechazada son:*\n*1.- El Bot está saturado.*\n*2.- El Bot fue eliminado del grupo recientemente.*\n*3.- El link del grupo ha sido restablecido.*\n*4.-El Bot no se agrega a grupos por decisión del propietario/a.*\n\n*—◉ El proceso de evaluación puede tomar algo de tiempo, incluso dias, tenga paciencia.*'}, {quoted: m});
+      conn.sendMessage(m.chat, {text: 'Seu link está sendo analisado pelo meu proprietário, aguarde um momento'}, {quoted: m});
       const data = global.owner.filter(([id]) => id)[0];
       const dataArray = Array.isArray(data) ? data : [data];
       for (const entry of dataArray) {
         await conn.sendMessage(entry + '@s.whatsapp.net', {
-          text: '*[❗] NUEVA SOLICITUD DE UN BOT PARA UN GRUPO [❗]*\n\n*—◉ Solicitante:* ' + '@' + m.sender.split('@')[0] + '\n*—◉ Link del grupo:* ' + link,
+          text: 'Um usuário quer me adicionar ao grupo ' + '@' + m.sender.split('@')[0] + '\ne esse é o link' + link,
           mentions: [m.sender],
           contextInfo: {
             forwardingScore: 9999999,
@@ -30,7 +30,6 @@ const handler = async (m, {conn, text, isMods, isOwner, isPrems}) => {
               'title': global.titulowm,
               'containsAutoReply': true,
               'mediaType': 1,
-              'thumbnail': imagen6,
               'mediaUrl': `${link}`,
               'sourceUrl': `${link}`,
             },

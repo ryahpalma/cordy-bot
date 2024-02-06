@@ -1,5 +1,5 @@
 function handler(m, {command, conn, text, usedPrefix}) {
-  if (!text) throw `Para utilizar esse comando envie:\n_${usedPrefix}${command} mensagem_`;
+  if (!text) throw `Para utilizar esse comando envie:\n_${usedPrefix + command} mensagem_`;
 
   conn.sendPresenceUpdate('composing', m.chat);
 

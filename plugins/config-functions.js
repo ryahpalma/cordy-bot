@@ -1,5 +1,13 @@
-const handler = async (m, {conn, usedPrefix, command, args, isOwner, isAdmin, isROwner}) => {
-const optionsFull = `*Comandos*\n 
+const handler = async (m, {
+  conn,
+  usedPrefix,
+  command,
+  args,
+  isOwner,
+  isAdmin,
+  isROwner,
+}) => {
+  const optionsFull = `*Comandos*\n 
 *Opção:* Bem vindo
 *Comando:* ${usedPrefix + command} bemvindo
 *Descrição:* Ativa ou desativa a função de bem-vindo no grupo.
@@ -169,7 +177,8 @@ const optionsFull = `*Comandos*\n
   const user = global.db.data.users[m.sender];
   const bot = global.db.data.settings[conn.user.jid] || {};
   const type = (args[0] || '').toLowerCase();
-  let isAll = false; const isUser = false;
+  let isAll = false;
+  const isUser = false;
   switch (type) {
     case 'welcome':
       if (!m.isGroup) {
@@ -206,6 +215,15 @@ const optionsFull = `*Comandos*\n
         throw false;
       }
       chat.detect2 = isEnable;
+      break;
+    case 'simsimi':
+      if (m.isGroup) {
+        if (!(isAdmin || isROwner || isOwner)) {
+          global.dfail('admin', m, conn);
+          throw false;
+        }
+      }
+      chat.simi = isEnable;
       break;
     case 'antiporno':
       if (m.isGroup) {

@@ -1,7 +1,7 @@
 const user = (a) => '@' + a.split('@')[0];
 
 function handler(m, {groupMetadata, command, conn, text, usedPrefix}) {
-  if (!text) throw `Para utilizar esse comando envie:\n${usedPrefix}${command} *título*`;
+  if (!text) throw `Para utilizar esse comando envie:\n${usedPrefix + command} *título*`;
   const participant = groupMetadata.participants.map((v) => v.id);
   const a = participant.getRandom();
   const b = participant.getRandom();

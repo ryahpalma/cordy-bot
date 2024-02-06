@@ -19,13 +19,13 @@ const handler = async (m, {conn, text, command, usedPrefix}) => {
     const warntext = `Marque o membro ou selecione uma mensagem para advertir\n\n*Exemplo:*\n_${usedPrefix + command} @${global.numberexample}_`;
     return m.reply(warntext, m.chat, {mentions: m});
   }
-  user.warn += 1;
-  await m.reply(`${user.warn == 1 ? `*@${who.split`@`[0]}*` : `*@${who.split`@`[0]}*`} recebeu uma advertência!\nMotivo: ${sdms}\n*Advertências: ${user.warn}/3*`, null, {mentions: [who]});
-  if (user.warn >= 3) {
+  user.warnTimes += 1;
+  await m.reply(`${user.warnTimes === 1 ? `*@${who.split`@`[0]}*` : `*@${who.split`@`[0]}*`} recebeu uma advertência!\nMotivo: ${sdms}\n*Advertências: ${user.warnTimes}/3*`, null, {mentions: [who]});
+  if (user.warnTimes >= 3) {
     if (!bot.restrict) {
       return m.reply('É necessário habilitar as restrições para utilizar este comando');
     }
-    user.warn = 0;
+    user.warnTimes = 0;
     await m.reply(`Você foi avisado(a) várias vezes vezes... \n*@${who.split`@`[0]}* Você passou o limite de advertências, irei te remover.`, null, {mentions: [who]});
     await conn.groupParticipantsUpdate(m.chat, [who], 'remove');
   }

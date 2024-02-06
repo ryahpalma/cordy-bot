@@ -1,7 +1,7 @@
 import {addExif} from '../lib/sticker.js';
 
 const handler = async (m, {conn, text, usedPrefix, command}) => {
-  if (!m.quoted) throw `Mencione o sticker que deseja adicionar um nome de pacote e um nome de autor, exemplo: \n_${usedPrefix}${command} packname|author_`;
+  if (!m.quoted) throw `Mencione o sticker que deseja adicionar um nome de pacote e um nome de autor, exemplo: \n_${usedPrefix + command} packname|author_`;
   let sticker = false;
   try {
     let [packname, ...author] = text.split('|');

@@ -7,8 +7,8 @@ import fetch from 'node-fetch';
 import axios from 'axios';
 import moment from 'moment-timezone';
 
-global.openai_key = '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';
-global.openai_org_id = 'org-scX4yCmEDcwExgTJ7yLQzNms';
+global.openai_key = 'sk-';
+global.openai_org_id = 'org-';
 
 global.keysZens = ['LuOlangNgentot', 'c2459db922', '37CC845916', '6fb0eff124', 'hdiiofficial', 'fiktod', 'BF39D349845E', '675e34de8a', '0b917b905e6f'];
 global.keysxxx = keysZens[Math.floor(keysZens.length * Math.random())];

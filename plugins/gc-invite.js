@@ -18,7 +18,7 @@ const handler = async (m, {
   args,
 }) => {
   if (!global.db.data.settings[conn.user.jid].restrict) throw `Para habilitar este comando envie ${usedPrefix}enable restrict`;
-  if (!args[0]) throw `Adicione o número do usuário que deseja convidar\n\nEnvie: _${usedPrefix}${command} 5511999999999_`;
+  if (!args[0]) throw `Adicione o número do usuário que deseja convidar\n\nEnvie: _${usedPrefix + command} 5511999999999_`;
   try {
     const _participants = participants.map((user) => user.id);
     const users = (await Promise.all(

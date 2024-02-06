@@ -5,51 +5,38 @@ export async function before(m, {conn, isAdmin, isBotAdmin, usedPrefix}) {
   if (!m.isGroup) return !1;
   const chat = global.db.data.chats[m.chat];
   const bot = global.db.data.settings[this.user.jid] || {};
-  const delet = m.key.participant;
-  const bang = m.key.id;
-  const name = await conn.getName(m.sender);
-  const fakemek = {
-    'key': {
-      'participant': '0@s.whatsapp.net',
-      'remoteJid': '0@s.whatsapp.net',
-    },
-    'message': {
-      'groupInviteMessage': {
-        'groupJid': '51995386439-1616969743@g.us',
-        'inviteCode': 'm',
-        'groupName': 'P',
-        'caption': 'The Mystic - Bot',
-        'jpegThumbnail': null,
-      },
-    },
-  };
-  if (chat.antiTraba && m.text.length > 5000) { // Cantidad máxima de caracteres aceptados en un mensaje.
+  const participantKey = m.key.participant;
+  const messageKey = m.key.id;
+  if (chat.antiTraba && m.text.length > 5000) {
     if (isAdmin) {
       return conn.sendMessage(m.chat, {
-        text: `_*< ANTI-TRABAS />*_\n\n*[ ℹ️ ] El administrador @${m.sender.split('@')[0]} envio un mensaje que contiene muchos caracteres.*`,
+        text: `Segurança\n\nO administrador @${m.sender.split('@')[0]} enviou uma mensagem muito grande`,
         mentions: [m.sender],
-      }, {quoted: fakemek});
+      });
     }
-    conn.sendMessage(m.chat, `*[ ! ] Se detecto un mensaje que contiene muchos caracteres [ ! ]*\n`, `${isBotAdmin ? '' : 'No soy administrador, no puedo hacer nada :/'}`, m);
+
+    const optionsDanger = isBotAdmin ? '' : 'Não sou administrador, não posso fazer nada';
+    conn.sendMessage(m.chat, `Ameaça detectada\n`, optionsDanger, m);
+
     if (isBotAdmin && bot.restrict) {
       conn.sendMessage(m.chat, {
         delete: {
           remoteJid: m.chat,
           fromMe: false,
-          id: bang,
-          participant: delet,
+          id: messageKey,
+          participant: participantKey,
         },
       });
       setTimeout(() => {
         conn.sendMessage(m.chat, {
-          text: `Marcar el chat como leido ✓\n${'\n'.repeat(400)}\n=> El número : wa.me/${m.sender.split('@')[0]}\n=> Alias : ${name}\n[ ! ] Acaba de enviar un texto que contiene muchos caracteres que puede ocasionar fallos en los dispositivos`,
+          text: `Mensagem de segurança\n${'\n'.repeat(400)}`,
           mentions: [m.sender],
         }, {quoted: fakemek});
       }, 0);
       setTimeout(() => {
         conn.groupParticipantsUpdate(m.chat, [m.sender], 'remove');
       }, 1000);
-    } else if (!bot.restrict) return m.reply('[ ! ] Para realizar acciones de eliminación, mi dueño tiene que encender el modo restringido!');
+    } else if (!bot.restrict) return m.reply('É necessário habilitar o comando de restrição para deletar mensagens');
   }
   return !0;
 }

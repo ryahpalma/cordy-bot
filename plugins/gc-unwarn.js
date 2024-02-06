@@ -6,7 +6,7 @@ const handler = async (m, {conn, text, command, usedPrefix}) => {
   const warntext = `Mencione ou marque um membro para retirar uma advertência*\n\nExemplo: _${usedPrefix + command} @${global.numberexample}_`;
   if (!who) throw m.reply(warntext, m.chat, {mentions: m});
   if (m.mentionedJid.includes(conn.user.jid)) return;
-  if (user.warn == 0) throw 'O membro não tem nenhuma advertência';
+  if (user.warnTimes == 0) throw 'O membro não tem nenhuma advertência';
   user.warn -= 1;
   await m.reply(`${user.warn == 1 ? `*@${who.split`@`[0]}*` : `*@${who.split`@`[0]}*`} teve uma advertência removida\n*Total ${user.warn}/3*`, null, {mentions: [who]});
 };

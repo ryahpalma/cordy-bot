@@ -9,8 +9,8 @@ const handler = async (m, {conn, text}) => {
     throw 'Erro!';
   }
 };
-handler.help = ['dono'];
+handler.help = ['owner'];
 handler.tags = ['info'];
-handler.command = /^dono$/i;
+handler.command = /^owner$/i;
 handler.fail = null;
 export default handler;

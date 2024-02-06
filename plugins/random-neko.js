@@ -4,9 +4,8 @@ const handler = async (m, {conn, command}) => {
   const nek = ne.split('\n');
   const neko = await nek[Math.floor(Math.random() * nek.length)];
   if (neko == '') throw 'Error';
-  conn.sendFile(m.chat, neko, 'error.jpg', `Nyaww~ 🐾💗`, m);
+  conn.sendFile(m.chat, neko, 'error.jpg', '', m);
 };
-// conn.sendButton(m.chat, 'Nyaww~ 🐾💗', wm, neko, [['🔄 𝚂𝙸𝙶𝚄𝙸𝙴𝙽𝚃𝙴 🔄', `/${command}`]],m)}
 handler.command = /^(neko)$/i;
 handler.tags = ['anime'];
 handler.help = ['neko'];

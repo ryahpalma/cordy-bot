@@ -24,9 +24,9 @@ const handler = async (m, {conn, usedPrefix, command, text}) => {
     conn.reply(m.chat, `A administração do membro foi retirada`, m);
   }
 };
-handler.help = ['remove-admin'].map((v) => 'remove-admin ' + v);
+handler.help = ['demote'].map((v) => 'demote ' + v);
 handler.tags = ['group'];
-handler.command = /^remove-admin$/i;
+handler.command = /^demote$/i;
 handler.group = true;
 handler.admin = true;
 handler.botAdmin = true;

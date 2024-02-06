@@ -33,7 +33,7 @@ const handler = async (m, {conn, args, usedPrefix, command}) => {
       if (isUrl(args[0])) {
         stickerImage = await sticker(false, args[0], global.packname, global.author);
       } else {
-        return m.reply(`O link não é válido, você deve enviar um arquivo JPG para transformar em sticker, exemplo: \n_${usedPrefix}${command} https://telegra.ph/file/0dc687c61410765e98de2.jpg_`);
+        return m.reply(`O link não é válido, você deve enviar um arquivo JPG para transformar em sticker, exemplo: \n_${usedPrefix + command} https://telegra.ph/file/0dc687c61410765e98de2.jpg_`);
       }
     }
   } catch (e) {

@@ -1,30 +1,35 @@
 const handler = async (m, {conn, command, text, usedPrefix}) => {
   if (!text) throw `Você deve mencionar algum membro para eu calcular`;
   const percentages = (100).getRandom();
-  let emoji = '';
-  let description = '';
+  let emoji, description, article;
+
   switch (command) {
     case 'lesbica':
+      emoji = '🏳️‍🌈';
+      article = 'a';
+      break;
     case 'gay':
       emoji = '🏳️‍🌈';
-      if (percentages < 50) {
-        description = `Descobri que o(a) ${text} é ${percentages}% ${command} ${emoji}\nSó não saiu do armário ainda`;
-      } else if (percentages >= 50) {
-        description = `Descobri que o(a) ${text} é ${percentages}% ${command} ${emoji}\nNa verdade todo mundo já sabia`;
-      }
+      article = 'o';
       break;
     case 'safado':
+      emoji = '😏💦';
+      article = 'o';
+      break;
     case 'safada':
       emoji = '😏💦';
-      if (percentages < 50) {
-        description = `Descobri que o(a) ${text} é ${percentages}% ${command} ${emoji}\nSó que é bem timido(a)`;
-      } else if (percentages >= 50) {
-        description = `Descobri que o(a) ${text} é ${percentages}% ${command} ${emoji}\nÉ o(a) mais safado(a) do Brasil`;
-      }
+      article = 'a';
       break;
     default:
-      throw `Comando inválido`;
+      throw 'Comando inválido';
   }
+
+  if (percentages < 50) {
+    description = `Descobri que ${article} ${text} é ${percentages}% ${command} ${emoji}\nSó não saiu do armário ainda`;
+  } else if (percentages >= 50) {
+    description = `Descobri que ${article} ${text} é ${percentages}% ${command} ${emoji}\nNa verdade todo mundo já sabia`;
+  }
+
   const sources = [
     'Minha cabeça',
     'Informação tirada pelo IBGE',

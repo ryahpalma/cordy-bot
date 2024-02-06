@@ -1,5 +1,3 @@
-/* Creditos a https://github.com/unptoadrih15/UPABOT-MD */
-
 const handler = async (m, {conn, isAdmin}) => {
   if (m.fromMe) return;
   if (isAdmin) throw 'Você já é administrador do grupo';

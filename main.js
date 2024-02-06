@@ -86,8 +86,6 @@ global.loadDatabase = async function loadDatabase() {
     users: {},
     chats: {},
     stats: {},
-    msgs: {},
-    sticker: {},
     settings: {},
     ...(global.db.data || {}),
   };

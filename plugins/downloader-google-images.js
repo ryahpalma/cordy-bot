@@ -12,7 +12,7 @@ const handler = async (m, {conn, text, usedPrefix, command}) => {
     conn.sendFile(m.chat, link, 'image.jpg', '', m);
   }
 };
-handler.help = ['google-images <query>'];
+handler.help = ['image <query>'];
 handler.tags = ['internet', 'tools'];
-handler.command = /^google-images$/i;
+handler.command = /^(image|img)$/i;
 export default handler;

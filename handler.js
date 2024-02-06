@@ -5,7 +5,6 @@ import {fileURLToPath} from 'url';
 import path, {join} from 'path';
 import fs, {unwatchFile, watchFile} from 'fs';
 import chalk from 'chalk';
-import mddd5 from 'md5';
 import ws from 'ws';
 
 /**
@@ -60,19 +59,20 @@ export async function handler(chatUpdate) {
         global.db.data.users[m.sender] = {};
       }
       if (user) {
-        if (!('premium' in user)) user.premium = false;
+        if (!('premium' in user)) user.isPremium = false;
         if (!isNumber(user.antispam)) user.antispam = 0;
         if (!isNumber(user.antispamlastclaim)) user.antispamlastclaim = 0;
-        if (!user.premium) user.premium = false;
+        if (!user.premium) user.isPremium = false;
         if (!user.premium) user.premiumTime = 0;
         if (!user.wait) user.wait = 0;
       } else {
         global.db.data.users[m.sender] = {
           banned: false,
-          BannedReason: '',
-          Banneduser: false,
-          premium: false,
+          bannedReason: '',
+          bannedUser: false,
+          isPremium: false,
           premiumTime: 0,
+          warnTimes: 0,
         };
       }
       const chat = global.db.data.chats[m.chat];
@@ -100,6 +100,7 @@ export async function handler(chatUpdate) {
         if (!('antiForeign' in chat)) chat.antiForeign = false;
         if (!('antiporno' in chat)) chat.antiporno = false;
         if (!('modoadmin' in chat)) chat.modoadmin = false;
+        if (!('simi' in chat)) chat.simi = false;
         if (!isNumber(chat.expired)) chat.expired = 0;
       } else {
         global.db.data.chats[m.chat] = {
@@ -123,7 +124,7 @@ export async function handler(chatUpdate) {
           antiForeign: false,
           antiporno: false,
           modoadmin: false,
-          game: true,
+          simi: false,
           expired: 0,
         };
       }
@@ -302,7 +303,6 @@ export async function handler(chatUpdate) {
 
           if (!['owner-unbanchat.js', 'info-owner.js'].includes(name) && chat && chat?.isBanned && !isROwner) return; // Except this
           if (name != 'owner-unbanchat.js' && name != 'owner-exec.js' && name != 'owner-exec2.js' && chat?.isBanned && !isROwner) return; // Except this
-          //if ((name != 'owner-unbanchat.js' || name != 'owner-exec.js' || name != 'owner-exec2.js') && chat?.isBanned && !isROwner) return; // Except this
 
           if (m.text && user.banned && !isROwner) {
             if (typeof user.bannedMessageCount === 'undefined') {
@@ -381,26 +381,7 @@ export async function handler(chatUpdate) {
           fail('private', m, this);
           continue;
         }
-        if (plugin.register == true && _user.registered == false) { // Butuh daftar?
-          fail('unreg', m, this);
-          continue;
-        }
         m.isCommand = true;
-        const xp = 'exp' in plugin ? parseInt(plugin.exp) : 17; // XP Earning per command
-        if (xp > 200) {
-          m.reply('Ngecit -_-');
-        } // Hehehe
-        else {
-          m.exp += xp;
-        }
-        if (!isPrems && plugin.limit && global.db.data.users[m.sender].limit < plugin.limit * 1) {
-          mconn.conn.reply(m.chat, `*[ ℹ️ ] Sus diamantes se han agotado, puede adquirir más con el comando:* _${usedPrefix}buyall_`, m);
-          continue;
-        }
-        if (plugin.level > _user.level) {
-          mconn.conn.reply(m.chat, `*[ ℹ️ ] Se require tener el nivel ${plugin.level} para poder utilizar el comando. Tú nivel actual es ${_user.level}, usa el comando ${usedPrefix}lvl para subir tu nivel con XP.*`, m);
-          continue;
-        }
         const extra = {
           match,
           usedPrefix,
@@ -440,16 +421,12 @@ export async function handler(chatUpdate) {
             await m.reply(text);
           }
         } finally {
-          // m.reply(util.format(_user))
           if (typeof plugin.after === 'function') {
             try {
               await plugin.after.call(this, m, extra);
             } catch (e) {
               console.error(e);
             }
-          }
-          if (m.limit) {
-            m.reply('*[ ℹ️ ] Se utilizaron ' + +m.limit + ' diamante(s) (limites).*');
           }
         }
         break;

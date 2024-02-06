@@ -21,7 +21,7 @@ const handler = async (m, {conn, text, usedPrefix, command}) => {
   if (command == 'add-premium') {
     if (now < user.premiumTime) user.premiumTime += month;
     else user.premiumTime = now + month;
-    user.premium = true;
+    user.isPremium = true;
     formatTime(user.premiumTime - now).then((timeleft) => {
       const response = `*🎟️ Novo Membro Premium*\n\n*✨ Usuário ${name}*\n*🕐 Tempo: ${txt} Mês(es)*\n*📉 ${timeleft}*`;
       m.reply(response, null, {mentions: conn.parseMention(response)});
