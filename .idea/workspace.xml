@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9be182f0-f00f-4201-86aa-08b9589d916b" name="Changes" comment="add install.sh and remove strange slang worlds">
+    <list default="true" id="9be182f0-f00f-4201-86aa-08b9589d916b" name="Changes" comment="add accept for all packages on apt install">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/install.sh" beforeDir="false" afterPath="$PROJECT_DIR$/install.sh" afterDir="false" />
     </list>
@@ -116,7 +116,8 @@
       <workItem from="1708739853392" duration="159000" />
       <workItem from="1709110093431" duration="7286000" />
       <workItem from="1709290749875" duration="8076000" />
-      <workItem from="1709307602367" duration="2392000" />
+      <workItem from="1709307602367" duration="2423000" />
+      <workItem from="1709312240211" duration="939000" />
     </task>
     <task id="LOCAL-00001" summary="add tmp folder">
       <option name="closed" value="true" />
@@ -142,7 +143,15 @@
       <option name="project" value="LOCAL" />
       <updated>1709308712659</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="add accept for all packages on apt install">
+      <option name="closed" value="true" />
+      <created>1709310297825</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1709310297825</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -151,6 +160,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add tmp folder" />
     <MESSAGE value="add install.sh and remove strange slang worlds" />
-    <option name="LAST_COMMIT_MESSAGE" value="add install.sh and remove strange slang worlds" />
+    <MESSAGE value="add accept for all packages on apt install" />
+    <option name="LAST_COMMIT_MESSAGE" value="add accept for all packages on apt install" />
   </component>
 </project>
