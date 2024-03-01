@@ -31,7 +31,6 @@ const handler = async (m, {conn, text, command, usedPrefix}) => {
   }
   return !1;
 };
-
 handler.command = /^warn$/i;
 handler.group = true;
 handler.admin = true;

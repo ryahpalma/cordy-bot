@@ -7,6 +7,6 @@ const handler = async (m, {usedPrefix}) => {
     throw `Erro ao tentar limpar as conversas com o ChatGPT`;
   }
 };
-handler.command = ['chatgpt-clear'];
+handler.command = ['chatgptclear'];
 handler.group = true;
 export default handler;

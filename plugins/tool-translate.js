@@ -26,5 +26,5 @@ const handler = async (m, {args, usedPrefix, command}) => {
     }
   }
 };
-handler.command = /^(translate|traducir|trad)$/i;
+handler.command = /^translate$/i;
 export default handler;

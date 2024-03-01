@@ -1,12 +1,15 @@
-
 const handler = async (m, {conn, text, usedPrefix, command}) => {
-  if (!text) return m.reply(`*[❗𝐈𝐍𝐅𝐎❗] 𝚄𝚂𝙾 𝙳𝙴𝙻 𝙲𝙾𝙼𝙰𝙽𝙳𝙾*\n\n*${usedPrefix + command}* hola @${m.sender.split`@`[0]} a`, null, {mentions: [m.sender]});
+  if (!text) return m.reply(`Digite \n\n_${usedPrefix + command} Acabei de peidar @${m.sender.split`@`[0]} E eu responderei_`, null, {mentions: [m.sender]});
   const cm = copy(m);
   let who;
-  if (text.includes('@0')) who = '0@s.whatsapp.net';
-  else if (m.isGroup) who = cm.participant = m.mentionedJid[0];
-  else who = m.chat;
-  if (!who) return m.reply(`*[❗𝐈𝐍𝐅𝐎❗] 𝚄𝚂𝙾 𝙳𝙴𝙻 𝙲𝙾𝙼𝙰𝙽𝙳𝙾*\n\n*${usedPrefix + command}* hola @${m.sender.split`@`[0]} a`, null, {mentions: [m.sender]});
+  if (text.includes('@0')) {
+    who = '0@s.whatsapp.net';
+  } else if (m.isGroup) {
+    who = cm.participant = m.mentionedJid[0];
+  } else {
+    who = m.chat;
+  }
+  if (!who) return m.reply(`Digite \n\n_${usedPrefix + command} Acabei de peidar @${m.sender.split`@`[0]} E eu responderei_`, null, {mentions: [m.sender]});
   cm.key.fromMe = false;
   cm.message[m.mtype] = copy(m.msg);
   const sp = '@' + who.split`@`[0];
@@ -17,7 +20,7 @@ const handler = async (m, {conn, text, usedPrefix, command}) => {
     },
   });
 };
-handler.help = ['fake <text> @user <text2>'];
+handler.help = ['fakereply <fakemessage> @user <myresponse>'];
 handler.tags = ['tools'];
 handler.command = /^fakereply$/;
 

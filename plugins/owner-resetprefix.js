@@ -1,6 +1,6 @@
 const handler = async (m, {conn}) => {
   global.prefix = new RegExp('^[' + (opts['prefix'] || '‎xzXZ/i!#$%+£¢€¥^°=¶∆×÷π√✓©®:;?&.\\-').replace(/[|\\{}()[\]^$+*?.\-\^]/g, '\\$&') + ']');
-  await m.reply(`[❗𝐈𝐍𝐅𝐎❗] 𝙿𝚁𝙴𝙵𝙸𝙹𝙾 𝚁𝙴𝚂𝚃𝙰𝙱𝙻𝙴𝙲𝙸𝙳𝙾 𝙲𝙾𝙽 𝙴𝚇𝙸𝚃𝙾`);
+  await m.reply(`O prefixo voltou ao padrão`);
 };
 handler.help = ['resetprefix'];
 handler.tags = ['owner'];

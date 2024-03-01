@@ -19,32 +19,17 @@ const handler = async (m, {conn, text, isMods, isOwner, isPrems}) => {
         await conn.sendMessage(entry + '@s.whatsapp.net', {
           text: 'Um usuário quer me adicionar ao grupo ' + '@' + m.sender.split('@')[0] + '\ne esse é o link' + link,
           mentions: [m.sender],
-          contextInfo: {
-            forwardingScore: 9999999,
-            isForwarded: true,
-            mentionedJid: [m.sender],
-            'externalAdReply': {
-              'showAdAttribution': true,
-              'containsAutoReply': true,
-              'renderLargerThumbnail': true,
-              'title': global.titulowm,
-              'containsAutoReply': true,
-              'mediaType': 1,
-              'mediaUrl': `${link}`,
-              'sourceUrl': `${link}`,
-            },
-          },
         }, {quoted: m});
       }
       enviando = false;
     }
   } catch {
     enviando = false;
-    throw '*[❗] Lo sentimos, algo salio mal por favor reportelo o vuelva a intentarlo.*';
+    throw 'Houve um erro, tente novamente mais tarde!';
   }
 };
 handler.help = ['join [chat.whatsapp.com]'];
-handler.tags = ['premium'];
-handler.command = /^join|nuevogrupo$/i;
+handler.tags = ['owner'];
+handler.command = /^join$/i;
 handler.private = true;
 export default handler;

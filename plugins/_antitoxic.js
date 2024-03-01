@@ -9,10 +9,9 @@ export async function before(m, {isAdmin, isBotAdmin, isOwner}) {
   }
   const user = global.db.data.users[m.sender];
   const chat = global.db.data.chats[m.chat];
-  const bot = global.db.data.settings[mconn.conn.user.jid] || {};
   const isToxic = toxicRegex.exec(m.text);
 
-  if (isToxic && chat.antiToxic) {
+  if (chat.antiToxic && isToxic) {
     user.warnTimes += 1;
     if (!(user.warnTimes >= 5)) await m.reply('Segurança\n\n' + `${user.warnTimes == 1 ? `@${m.sender.split`@`[0]}` : `@${m.sender.split`@`[0]}`}, enviar a palavra "${isToxic}" é proibida neste grupo.\n\n*Advertência:* ${user.warn}/5`, false, {mentions: [m.sender]});
   }

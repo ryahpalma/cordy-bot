@@ -1,6 +1,5 @@
 .github
 node_modules
-session
 
 package-lock.json
 database.json

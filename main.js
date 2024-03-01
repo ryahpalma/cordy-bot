@@ -86,14 +86,13 @@ global.loadDatabase = async function loadDatabase() {
     users: {},
     chats: {},
     stats: {},
+    sticker: {},
     settings: {},
     ...(global.db.data || {}),
   };
   global.db.chain = chain(global.db.data);
 };
 loadDatabase();
-
-/* Creditos a Otosaka (https://wa.me/51993966345) */
 
 global.chatgpt = new Low(new JSONFile(path.join(__dirname, '/db/chatgpt.json')));
 global.loadChatgptDB = async function loadChatgptDB() {
@@ -139,7 +138,7 @@ const rl = readline.createInterface({
   input: process.stdin,
   output: process.stdout,
 });
-const question = (texto) => new Promise((resolver) => rl.question(texto, resolver));
+const question = (text) => new Promise((resolver) => rl.question(text, resolver));
 
 const connectionOptions = {
   logger: pino({level: 'silent'}),

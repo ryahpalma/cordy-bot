@@ -59,19 +59,14 @@ export async function handler(chatUpdate) {
         global.db.data.users[m.sender] = {};
       }
       if (user) {
-        if (!('premium' in user)) user.isPremium = false;
         if (!isNumber(user.antispam)) user.antispam = 0;
         if (!isNumber(user.antispamlastclaim)) user.antispamlastclaim = 0;
-        if (!user.premium) user.isPremium = false;
-        if (!user.premium) user.premiumTime = 0;
         if (!user.wait) user.wait = 0;
       } else {
         global.db.data.users[m.sender] = {
           banned: false,
           bannedReason: '',
           bannedUser: false,
-          isPremium: false,
-          premiumTime: 0,
           warnTimes: 0,
         };
       }
@@ -96,9 +91,9 @@ export async function handler(chatUpdate) {
         if (!('antiLink2' in chat)) chat.antiLink2 = false;
         if (!('antiviewonce' in chat)) chat.antiviewonce = false;
         if (!('antiToxic' in chat)) chat.antiToxic = false;
-        if (!('antiTraba' in chat)) chat.antiTraba = false;
+        if (!('antilock' in chat)) chat.antilock = false;
         if (!('antiForeign' in chat)) chat.antiForeign = false;
-        if (!('antiporno' in chat)) chat.antiporno = false;
+        if (!('antiporn' in chat)) chat.antiporn = false;
         if (!('modoadmin' in chat)) chat.modoadmin = false;
         if (!('simi' in chat)) chat.simi = false;
         if (!isNumber(chat.expired)) chat.expired = 0;
@@ -120,9 +115,9 @@ export async function handler(chatUpdate) {
           antiLink2: false,
           antiviewonce: false,
           antiToxic: false,
-          antiTraba: false,
+          antilock: false,
           antiForeign: false,
-          antiporno: false,
+          antiporn: false,
           modoadmin: false,
           simi: false,
           expired: 0,
@@ -177,9 +172,7 @@ export async function handler(chatUpdate) {
     const isROwner = [conn.decodeJid(global.conn.user.id), ...global.owner.map(([number]) => number)].map((v) => v.replace(/[^0-9]/g, '') + '@s.whatsapp.net').includes(m.sender);
     const isOwner = isROwner || m.fromMe;
     const isMods = isOwner || global.mods.map((v) => v.replace(/[^0-9]/g, '') + '@s.whatsapp.net').includes(m.sender);
-    const isPrems = isROwner || isOwner || isMods || global.db.data.users[m.sender].premiumTime > 0; // || global.db.data.users[m.sender].premium = 'true'
-
-    if (opts['queque'] && m.text && !(isMods || isPrems)) {
+    if (opts['queque'] && m.text && !(isMods)) {
       const queque = this.msgqueque;
       const time = 1000 * 5;
       const previousID = queque[queque.length - 1];
@@ -262,7 +255,6 @@ export async function handler(chatUpdate) {
           isRAdmin,
           isAdmin,
           isBotAdmin,
-          isPrems,
           chatUpdate,
           __dirname: ___dirname,
           __filename,
@@ -363,10 +355,6 @@ export async function handler(chatUpdate) {
           fail('mods', m, this);
           continue;
         }
-        if (plugin.premium && !isPrems) { // Premium
-          fail('premium', m, this);
-          continue;
-        }
         if (plugin.group && !m.isGroup) { // Group Only
           fail('group', m, this);
           continue;
@@ -400,16 +388,12 @@ export async function handler(chatUpdate) {
           isRAdmin,
           isAdmin,
           isBotAdmin,
-          isPrems,
           chatUpdate,
           __dirname: ___dirname,
           __filename,
         };
         try {
           await plugin.call(this, m, extra);
-          if (!isPrems) {
-            m.limit = m.limit || plugin.limit || false;
-          }
         } catch (e) {
           m.error = e;
           console.error(e);
@@ -525,20 +509,10 @@ export async function participantsUpdate({id, participants, action}) {
             if (userPrefix && chat.antiForeign && botTt.restrict && isBotAdminNn && action === 'add') {
               const responseb = await m.conn.groupParticipantsUpdate(id, [user], 'remove');
               if (responseb[0].status === '404') return;
-              const fkontak2 = {
-                'key': {
-                  'participants': '0@s.whatsapp.net',
-                  'remoteJid': 'status@broadcast',
-                  'fromMe': false,
-                  'id': 'Halo',
-                },
-                'message': {'contactMessage': {'vcard': `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${user.split('@')[0]}:${user.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`}},
-                'participant': '0@s.whatsapp.net',
-              };
               await m.conn.sendMessage(id, {
                 text: `@${user.split('@')[0]} Não é permitido números estrangeiros`,
                 mentions: [user],
-              }, {quoted: fkontak2});
+              });
               return;
             }
             await m.conn.sendMessage(id, apii.data, '', text, null, false, {mentions: [user]});
@@ -628,7 +602,6 @@ global.dfail = (type, m, conn) => {
     rowner: '*Este comando só pode ser utilizado pelo meu proprietário.*',
     owner: '*Este comando só pode ser utilizado pelo meu proprietário.*',
     mods: '*Este comando só pode ser utilizado por moderadores e pelo meu proprietário.*',
-    premium: '*Este comando só pode ser utilizado por membros premium e pelo meu proprietário.*',
     group: '*Este comando só pode ser utilizado em grupos.*',
     private: '*Este comando só pode ser utilizado no chat privado do bot.*',
     admin: '*Este comando só pode ser usado por administradores do grupo.*',

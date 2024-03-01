@@ -14,5 +14,5 @@ const handler = async (m, {conn, text, usedPrefix, command}) => {
 };
 handler.help = ['image <query>'];
 handler.tags = ['internet', 'tools'];
-handler.command = /^(image|img)$/i;
+handler.command = /^(google|image|img)$/i;
 export default handler;

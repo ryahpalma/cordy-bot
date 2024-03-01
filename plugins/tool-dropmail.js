@@ -1,4 +1,5 @@
 import fetch from 'node-fetch';
+
 const handler = async (m, {
   conn,
   isOwner,
@@ -66,7 +67,7 @@ const handler = async (m, {
   }
 };
 handler.help = ['dropmail'];
-handler.tags = ['misc'];
+handler.tags = ['tool'];
 handler.command = /^(dropmail)$/i;
 export default handler;
 
@@ -121,7 +122,6 @@ async function get_mails(id_) {
     const data = await response.json();
     const inbox = data['data']['session']['mails'];
 
-    // return the size of the inbox to verify the amount of mail and whether the mail has arrived
     return [inbox, inbox.length];
   } catch (error) {
     console.log(error);

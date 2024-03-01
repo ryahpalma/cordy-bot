@@ -5,57 +5,126 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9be182f0-f00f-4201-86aa-08b9589d916b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/_simsimi.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/owner-announce.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/welcome.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/_antiprivate.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/_gc-good.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/downloader-xtwitter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/gc-formset.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/gc-groupset.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/gc-info.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/gc-rulesset.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/info-status.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/owner-report.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/tool-cmdlist.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/tool-enhance.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/tool-fixwaiting.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/api.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/config.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/handler.js" beforeDir="false" afterPath="$PROJECT_DIR$/handler.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/gdrive.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/sticker.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/sticker.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/y2dl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/y2mate.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ytdll.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/_anti-view-once.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/_antiviewonce.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/_antilink.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/_antilink.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/_antilink2.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/_antilink2.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/_antiprivado.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/plugins/_antitoxic.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/_antitoxic.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/_antitrabas.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/_antitrabas.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/_antiviewonce.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/_anti-view-once.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/_autosticker.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/_auto-sticker.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/_cmdWithMedia.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/_cmd-with-media.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/_detectEvents.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/_detect-events.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/_premium.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/_premium.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/_antitrabas.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/_antilock.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/_auto-sticker.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/_autosticker.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/_cmd-with-media.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/_cmdwithmedia.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/_premium.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/audio-effects.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/plugins/config-functions.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/config-functions.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/plugins/downloader-google-images.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/downloader-google-images.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/downloader-stickerpack.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/gc-invite.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/gc-invite.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/downloader-igstory.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/downloader-pinterest.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/downloader-pinterest.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/downloader-playdoc.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/downloader-playlist.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/downloader-ringtone.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/downloader-soundcloud.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/downloader-wallpaper.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/downloader-x_twitter.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/gc-config-time.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/gc-groupsettime.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/gc-config.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/gc-rules.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/gc-delete.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/gc-delete.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/gc-hidetag.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/gc-hidetag.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/gc-infogroup.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/gc-link.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/gc-link.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/plugins/gc-list-warn.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/gc-list-warn.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/gc-promote.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/gc-promote.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/gc-remove-admin.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/gc-demote.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/gc-set-welcome.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/gc-set-welcome.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/gc-remove.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/gc-ban.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/gc-set-bye.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/gc-byeset.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/gc-set-description.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/gc-descriptionset.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/gc-set-name.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/gc-nameset.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/gc-set-profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/gc-profileset.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/gc-set-welcome.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/gc-welcomeset.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/gc-tag-all.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/gc-tagall.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/plugins/gc-unwarn.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/gc-unwarn.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/plugins/gc-warn.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/gc-warn.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/info-owner.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/info-owner.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/info-listprem.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/info-ping.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/info-ping.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/plugins/menu-default.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/menu-default.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/menu-porn.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/menu-porn.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/owner-add-premium.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/owner-add-premium.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/owner-auto-admin.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/owner-auto-admin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/owner-chatgpt.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/owner-get-plugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/owner-get-plugin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/owner-getmsg.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/menu-porn.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/owner-add-premium.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/owner-auto-admin.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/owner-autoadmin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/owner-banchat.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/owner-banchat.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/owner-banlist.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/owner-banlist.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/owner-banuser.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/owner-banuser.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/owner-bcgc.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/owner-bcgc2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/owner-block-unblock.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/owner-blocklist.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/owner-blocklist.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/owner-broadcast.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/owner-broadcastchats.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/owner-check-github.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/owner-git.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/owner-exec.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/owner-exec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/owner-grouplist.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/owner-grouplist.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/plugins/owner-join.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/owner-join.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/owner-remove-premium.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/owner-remove-premium.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/owner-remove-premium.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/owner-reporte.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/owner-resetprefix.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/owner-resetprefix.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/owner-resetuser.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/owner-resetuser.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/owner-restart.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/owner-restart.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/owner-saveimage.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/owner-set-prefix.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/owner-prefixset.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/owner-set-profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/owner-profilesetbot.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/owner-set-remove-owner.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/owner-ownerset.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/owner-unbanchat.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/owner-unbanchat.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/owner-unbanuser.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/owner-unbanuser.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/plugins/owner-update.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/owner-update.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/random-fun-calculator.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/random-fun-calculator.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/random-kpop.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/random-kpop.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/random-neko.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/random-neko.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/random-say.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/random-say.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/random-top.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/random-top.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/tool-clima.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/tool-clima.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/tool-fix-messages.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/tool-fix-messages.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/tool-set-sticker-name.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/tool-set-sticker-name.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/tool-spamwa.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/random-anime.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/random-anime.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/random-blackpink.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/random-blackpink.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/random-itzy.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/random-lolivid.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/random-top.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/random-waifu.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/random-waifu.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/random-wallprandoms.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/tool-chatgpt-clear.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/tool-chatgpt-clear.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/tool-clima.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/tool-weather.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/tool-dalle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/tool-dropmail.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/tool-dropmail.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/tool-fakereply.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/tool-fakereply.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/tool-fix-messages.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/tool-fix-size.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/tool-hd.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/tool-igstalk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/tool-inspect.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/tool-ocr.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/tool-ocr.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/tool-readmore.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/tool-readmore.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/tool-readqrcode.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/tool-readqrcode.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/tool-screenshot.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/tool-screenshot.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/tool-set-sticker-name.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/tool-stickerset.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/plugins/tool-sticker.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/tool-sticker.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/tool-styletext.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/tool-tinyurl.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/tool-tinyurl.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/tool-topdf.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/tool-topdf.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/plugins/tool-translate.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/tool-translate.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/avatar_contact.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/level_c.otf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/texts.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/tool-tz.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/tool-view.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/tool-view.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/tool-whatmusic.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/tool-whatmusic.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,6 +153,8 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
+    "javascript.nodejs.core.library.configured.version": "20.9.0",
+    "javascript.nodejs.core.library.typings.version": "20.9.5",
     "last_opened_file_path": "C:/Users/Ryan/Documents/Softwares/cordy",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -100,6 +171,10 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Ryan\Documents\Softwares\cordy\plugins" />
       <recent name="C:\Users\Ryan\Documents\Softwares\cordy" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Ryan\Documents\Softwares\cordy\plugins" />
+      <recent name="C:\Users\Ryan\Documents\Softwares\cordy\lib" />
     </key>
   </component>
   <component name="RunManager">
@@ -150,7 +225,15 @@
       <workItem from="1707120277703" duration="260000" />
       <workItem from="1707120794622" duration="405000" />
       <workItem from="1707161364031" duration="255000" />
-      <workItem from="1707168119648" duration="21330000" />
+      <workItem from="1707168119648" duration="21724000" />
+      <workItem from="1707248952731" duration="1780000" />
+      <workItem from="1707275318955" duration="5155000" />
+      <workItem from="1707441340917" duration="56000" />
+      <workItem from="1707486829917" duration="1099000" />
+      <workItem from="1707715852636" duration="1675000" />
+      <workItem from="1708739853392" duration="159000" />
+      <workItem from="1709110093431" duration="7286000" />
+      <workItem from="1709290749875" duration="7926000" />
     </task>
     <servers />
   </component>

@@ -13,9 +13,9 @@ const handler = async (m, {conn}) => {
     buffer = Buffer.concat([buffer, chunk]);
   }
   if (/video/.test(type)) {
-    return conn.sendFile(m.chat, buffer, 'error.mp4', msg[type].caption || '', m);
+    return conn.sendFile(m.chat, buffer, 'image.mp4', msg[type].caption || '', m);
   } else if (/image/.test(type)) {
-    return conn.sendFile(m.chat, buffer, 'error.jpg', msg[type].caption || '', m);
+    return conn.sendFile(m.chat, buffer, 'image.jpg', msg[type].caption || '', m);
   }
 };
 handler.help = ['view'];

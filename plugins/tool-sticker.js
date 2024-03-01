@@ -4,9 +4,8 @@ import uploadImage from '../lib/uploadImage.js';
 import {webp2png} from '../lib/webp2mp4.js';
 
 const handler = async (m, {conn, args, usedPrefix, command}) => {
-  if (usedPrefix == 'a' || usedPrefix == 'A') return;
   let stickerImage = false;
-  const user = db.data.users[m.sender];
+
   try {
     const q = m.quoted ? m.quoted : m;
     const mime = (q.msg || q).mimetype || q.mediaType || '';
@@ -39,6 +38,7 @@ const handler = async (m, {conn, args, usedPrefix, command}) => {
   } catch (e) {
     console.error(e);
     if (!stickerImage) stickerImage = e;
+    throw 'Não consegui fazer sua imagem, acabei errando a receita do bolo...';
   } finally {
     if (stickerImage) {
       conn.sendFile(m.chat, stickerImage, 'sticker.webp', '', m);
