@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9be182f0-f00f-4201-86aa-08b9589d916b" name="Changes" comment="add tmp folder">
-      <change beforePath="$PROJECT_DIR$/tmp/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/.gitignore" afterDir="false" />
+    <list default="true" id="9be182f0-f00f-4201-86aa-08b9589d916b" name="Changes" comment="add install.sh and remove strange slang worlds">
+      <change afterPath="$PROJECT_DIR$/install.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/_antitoxic.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/_antitoxic.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,7 +117,7 @@
       <workItem from="1708739853392" duration="159000" />
       <workItem from="1709110093431" duration="7286000" />
       <workItem from="1709290749875" duration="8076000" />
-      <workItem from="1709307602367" duration="251000" />
+      <workItem from="1709307602367" duration="1086000" />
     </task>
     <task id="LOCAL-00001" summary="add tmp folder">
       <option name="closed" value="true" />
@@ -125,7 +127,15 @@
       <option name="project" value="LOCAL" />
       <updated>1709307852304</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="add tmp folder">
+      <option name="closed" value="true" />
+      <created>1709307864537</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1709307864537</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -133,6 +143,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add tmp folder" />
-    <option name="LAST_COMMIT_MESSAGE" value="add tmp folder" />
+    <MESSAGE value="add install.sh and remove strange slang worlds" />
+    <option name="LAST_COMMIT_MESSAGE" value="add install.sh and remove strange slang worlds" />
   </component>
 </project>
