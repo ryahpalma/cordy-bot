@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9be182f0-f00f-4201-86aa-08b9589d916b" name="Changes" comment="improve screenshot/weather plugin">
+    <list default="true" id="9be182f0-f00f-4201-86aa-08b9589d916b" name="Changes" comment="improve screenshot plugin">
       <change beforePath="$PROJECT_DIR$/plugins/tool-screenshot.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/tool-screenshot.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -121,7 +121,7 @@
       <workItem from="1709313770410" duration="148000" />
       <workItem from="1709317135859" duration="599000" />
       <workItem from="1709413622121" duration="18000" />
-      <workItem from="1709414866178" duration="1915000" />
+      <workItem from="1709414866178" duration="2121000" />
     </task>
     <task id="LOCAL-00001" summary="add tmp folder">
       <option name="closed" value="true" />
@@ -235,7 +235,15 @@
       <option name="project" value="LOCAL" />
       <updated>1709416728729</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="improve screenshot plugin">
+      <option name="closed" value="true" />
+      <created>1709416829481</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1709416829481</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -252,6 +260,7 @@
     <MESSAGE value="improve a lot of plugins" />
     <MESSAGE value="improve weather and calculatorfun" />
     <MESSAGE value="improve screenshot/weather plugin" />
-    <option name="LAST_COMMIT_MESSAGE" value="improve screenshot/weather plugin" />
+    <MESSAGE value="improve screenshot plugin" />
+    <option name="LAST_COMMIT_MESSAGE" value="improve screenshot plugin" />
   </component>
 </project>
