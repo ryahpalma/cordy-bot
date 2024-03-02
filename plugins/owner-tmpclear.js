@@ -1,15 +1,9 @@
 import {tmpdir} from 'os';
-import path, {join} from 'path';
-import {
-  readdirSync,
-  statSync,
-  unlinkSync,
-  existsSync,
-  readFileSync,
-  watch,
-} from 'fs';
+import {join} from 'path';
+import {readdirSync, statSync, unlinkSync} from 'fs';
+
 const handler = async (m, {conn, usedPrefix: _p, __dirname, args}) => {
-  conn.reply(m.chat, '*[ ✔ ] 𝙰𝚁𝙲𝙷𝙸𝚅𝙾𝚂 𝙳𝙴 𝙻𝙰 𝙲𝙰𝚁𝙿𝙴𝚃𝙰 𝚃𝙼𝙿 𝙴𝙻𝙸𝙼𝙸𝙽𝙰𝙳𝙾𝚂 𝙲𝙾𝙽 𝙴𝚇𝙸𝚃𝙾!!*', m);
+  conn.reply(m.chat, 'Deixei tudo limpinho!', m);
 
   const tmp = [tmpdir(), join(__dirname, '../tmp')];
   const filename = [];
@@ -19,8 +13,8 @@ const handler = async (m, {conn, usedPrefix: _p, __dirname, args}) => {
     unlinkSync(file);
   });
 };
-handler.help = ['cleartmp'];
+handler.help = ['tmpclear'];
 handler.tags = ['owner'];
-handler.command = /^(cleartmp|cleartemp)$/i;
+handler.command = /^tmpclear$/i;
 handler.rowner = true;
 export default handler;

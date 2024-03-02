@@ -6,7 +6,13 @@
   <component name="ChangeListManager">
     <list default="true" id="9be182f0-f00f-4201-86aa-08b9589d916b" name="Changes" comment="fix antiPrivate">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/owner-get-plugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/owner-get-plugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/owner-chetar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/owner-cleartmp.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/owner-tmpclear.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/owner-get-plugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/owner-pluginget.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/random-fun-calculator.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/random-calculatorfun.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/tool-chatgpt-clear.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/tool-chatgptclear.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/tool-cmdlist.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/tool-enhance.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/tool-enhance.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -122,7 +128,7 @@
       <workItem from="1709313770410" duration="148000" />
       <workItem from="1709317135859" duration="599000" />
       <workItem from="1709413622121" duration="18000" />
-      <workItem from="1709414866178" duration="448000" />
+      <workItem from="1709414866178" duration="1153000" />
     </task>
     <task id="LOCAL-00001" summary="add tmp folder">
       <option name="closed" value="true" />
@@ -196,7 +202,15 @@
       <option name="project" value="LOCAL" />
       <updated>1709414957077</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="fix antiPrivate">
+      <option name="closed" value="true" />
+      <created>1709415323250</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1709415323250</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
