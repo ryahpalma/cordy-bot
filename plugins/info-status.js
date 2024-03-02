@@ -10,7 +10,7 @@ const handler = async (m, {conn, usedPrefix}) => {
   const {
     restrict,
     antiCall,
-    antiprivate,
+    antiPrivate,
   } = global.db.data.settings[conn.user.jid] || {};
   const {autoread, gconly, pconly, self} = global.opts || {};
   const oldPerformance = performance.now();
@@ -30,7 +30,7 @@ Leitura automática: ${autoread ? 'ativo' : 'desativado'}
 Restrição: ${restrict ? 'ativo' : 'desativado'}
 Somente PC: ${pconly ? 'ativo' : 'desativado'}
 Somente GC: ${gconly ? 'ativo' : 'desativado'}
-Proibir PC: ${antiprivado ? 'ativo' : 'desativado'}
+Proibir PC: ${antiPrivate ? 'ativo' : 'desativado'}
 Proibir Ligação: ${antiCall ? 'ativo' : 'desativado'}`.trim();
 
   await m.reply(info);
