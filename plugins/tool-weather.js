@@ -15,9 +15,9 @@ const handler = async (m, {args}) => {
     } else if (temperature > 30) {
       message = 'que horror de cidade, como quem mora lá ainda não derreteu?';
     } else {
-      message = 'é o pior lugar de todos até agora... esse lugar deve ser uma estufa só pode';
+      message = 'é o pior lugar de todos até agora! esse lugar deve ser uma estufa só pode';
     }
-    m.reply(`Em ${name} está ${temperature} graus!\n\n${name} ${message}`);
+    m.reply(`Em ${name} está ${temperature}º graus. ${message}`);
   } catch {
     return 'Sem resultados';
   }
