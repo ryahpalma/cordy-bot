@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9be182f0-f00f-4201-86aa-08b9589d916b" name="Changes" comment="improve a lot of plugins">
+    <list default="true" id="9be182f0-f00f-4201-86aa-08b9589d916b" name="Changes" comment="improve weather and calculatorfun">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/random-fun-calculator.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/random-calculatorfun.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/tool-screenshot.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/tool-screenshot.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/plugins/tool-weather.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/tool-weather.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -123,7 +123,7 @@
       <workItem from="1709313770410" duration="148000" />
       <workItem from="1709317135859" duration="599000" />
       <workItem from="1709413622121" duration="18000" />
-      <workItem from="1709414866178" duration="1511000" />
+      <workItem from="1709414866178" duration="1768000" />
     </task>
     <task id="LOCAL-00001" summary="add tmp folder">
       <option name="closed" value="true" />
@@ -213,7 +213,15 @@
       <option name="project" value="LOCAL" />
       <updated>1709416113903</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="improve weather and calculatorfun">
+      <option name="closed" value="true" />
+      <created>1709416418515</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1709416418515</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -228,6 +236,7 @@
     <MESSAGE value="remove session" />
     <MESSAGE value="fix antiPrivate" />
     <MESSAGE value="improve a lot of plugins" />
-    <option name="LAST_COMMIT_MESSAGE" value="improve a lot of plugins" />
+    <MESSAGE value="improve weather and calculatorfun" />
+    <option name="LAST_COMMIT_MESSAGE" value="improve weather and calculatorfun" />
   </component>
 </project>
