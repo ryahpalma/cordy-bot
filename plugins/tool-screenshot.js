@@ -3,8 +3,8 @@ import fetch from 'node-fetch';
 const handler = async (m, {conn, text, args}) => {
   if (!args[0] && args[0].includes('https://')) return conn.reply(m.chat, 'Envie a URL com https:// de um site para visualizar por imagem', m);
   try {
-    const ss = await (await fetch(`https://image.thum.io/get/fullpage/${args[0]}`)).buffer();
     m.reply('Vou dar uma olhada na página e já te mostro');
+    const ss = await (await fetch(`https://image.thum.io/get/fullpage/${args[0]}`)).buffer();
     conn.sendFile(m.chat, ss, '', '', m);
   } catch {
     try {
