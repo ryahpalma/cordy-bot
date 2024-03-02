@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9be182f0-f00f-4201-86aa-08b9589d916b" name="Changes" comment="remove session">
+    <list default="true" id="9be182f0-f00f-4201-86aa-08b9589d916b" name="Changes" comment="fix antiPrivate">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/info-status.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/info-status.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/owner-get-plugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/owner-get-plugin.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -122,7 +122,7 @@
       <workItem from="1709313770410" duration="148000" />
       <workItem from="1709317135859" duration="599000" />
       <workItem from="1709413622121" duration="18000" />
-      <workItem from="1709414866178" duration="62000" />
+      <workItem from="1709414866178" duration="448000" />
     </task>
     <task id="LOCAL-00001" summary="add tmp folder">
       <option name="closed" value="true" />
@@ -188,7 +188,15 @@
       <option name="project" value="LOCAL" />
       <updated>1709313891277</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="fix antiPrivate">
+      <option name="closed" value="true" />
+      <created>1709414957077</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1709414957077</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -201,6 +209,7 @@
     <MESSAGE value="improve install script" />
     <MESSAGE value="remove session from repository" />
     <MESSAGE value="remove session" />
-    <option name="LAST_COMMIT_MESSAGE" value="remove session" />
+    <MESSAGE value="fix antiPrivate" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix antiPrivate" />
   </component>
 </project>
