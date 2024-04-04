@@ -1,9 +1,14 @@
-const handler = async (m, {conn, args, usedPrefix, command}) => {
-  m.reply('As regras precisam ser registradas no database.json');
+const handler = async (m, {conn, text, isROwner, isOwner}) => {
+  if (text) {
+    global.db.data.chats[m.chat].sRules = text;
+    m.reply('Mensagem de regras alterada');
+  } else {
+    throw 'Adicione a mensagem de regras corretamente';
+  }
 };
-handler.help = ['ruleset'];
+handler.help = ['ruleset <text>'];
 handler.tags = ['group'];
-handler.command = /^rulesset$/i;
+handler.group = true;
+handler.command = ['rulesset'];
 handler.admin = true;
-handler.botAdmin = true;
 export default handler;

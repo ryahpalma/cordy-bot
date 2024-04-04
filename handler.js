@@ -80,6 +80,9 @@ export async function handler(chatUpdate) {
         if (!('detect' in chat)) chat.detect = true;
         if (!('detect2' in chat)) chat.detect2 = false;
         if (!('sWelcome' in chat)) chat.sWelcome = '';
+        if (!('sRules' in chat)) chat.sRules = '';
+        if (!('sProhibited' in chat)) chat.sProhibited = '';
+        if (!('sForm' in chat)) chat.sForm = '';
         if (!('sBye' in chat)) chat.sBye = '';
         if (!('sPromote' in chat)) chat.sPromote = '';
         if (!('sDemote' in chat)) chat.sDemote = '';
@@ -94,7 +97,7 @@ export async function handler(chatUpdate) {
         if (!('antilock' in chat)) chat.antilock = false;
         if (!('antiForeign' in chat)) chat.antiForeign = false;
         if (!('antiporn' in chat)) chat.antiporn = false;
-        if (!('modoadmin' in chat)) chat.modoadmin = false;
+        if (!('adminmode' in chat)) chat.adminmode = false;
         if (!('simi' in chat)) chat.simi = false;
         if (!isNumber(chat.expired)) chat.expired = 0;
       } else {
@@ -104,6 +107,9 @@ export async function handler(chatUpdate) {
           detect: true,
           detect2: false,
           sWelcome: '',
+          sRules: '',
+          sProhibited: '',
+          sForm: '',
           sBye: '',
           sPromote: '',
           sDemote: '',
@@ -118,7 +124,7 @@ export async function handler(chatUpdate) {
           antilock: false,
           antiForeign: false,
           antiporn: false,
-          modoadmin: false,
+          adminmode: false,
           simi: false,
           expired: 0,
         };
@@ -133,7 +139,6 @@ export async function handler(chatUpdate) {
         if (!('antiCall' in settings)) settings.antiCall = false;
         if (!('antiPrivate' in settings)) settings.antiPrivate = false;
         if (!('antispam' in settings)) settings.antispam = false;
-        if (!('audios_bot' in settings)) settings.audios_bot = true;
         if (!('modoia' in settings)) settings.modoia = false;
       } else {
         global.db.data.settings[this.user.jid] = {
@@ -144,7 +149,6 @@ export async function handler(chatUpdate) {
           antiCall: false,
           antiPrivate: false,
           antispam: false,
-          audios_bot: true,
           modoia: false,
         };
       }
@@ -335,7 +339,7 @@ export async function handler(chatUpdate) {
           }
         }
         const hl = _prefix;
-        const adminMode = global.db.data.chats[m.chat].modoadmin;
+        const adminMode = global.db.data.chats[m.chat].adminmode;
         const mystica = `${plugin.botAdmin || plugin.admin || plugin.group || plugin || noPrefix || hl || m.text.slice(0, 1) == hl || plugin.command}`;
         if (adminMode && !isOwner && !isROwner && m.isGroup && !isAdmin && mystica) return;
 
@@ -492,30 +496,34 @@ export async function participantsUpdate({id, participants, action}) {
   switch (action) {
     case 'add':
     case 'remove':
-      if (chat.welcome && !chat?.isBanned) {
-        const groupMetadata = await m.conn.groupMetadata(id) || (conn.chats[id] || {}).metadata;
-        for (const user of participants) {
-          try {
-            pp = await m.conn.profilePictureUrl(user, 'image');
-          } catch (e) {
-          } finally {
-            const apii = await m.conn.getFile(pp);
-            const antiForeign = JSON.parse(fs.readFileSync('./src/antiForeign.json'));
-            const userPrefix = antiForeign.some((prefix) => user.startsWith(prefix));
-            const botTt2 = groupMetadata.participants.find((u) => m.conn.decodeJid(u.id) == m.conn.user.jid) || {};
-            const isBotAdminNn = botTt2?.admin === 'admin' || false;
-            text = (action === 'add' ? (chat.sWelcome || this.welcome || conn.welcome || 'Welcome, @user!').replace('@subject', await m.conn.getName(id)).replace('@desc', groupMetadata.desc?.toString() || '*𝚂𝙸𝙽 𝙳𝙴𝚂𝙲𝚁𝙸𝙿𝙲𝙸𝙾𝙽*') :
-              (chat.sBye || this.bye || conn.bye || 'Bye, @user!')).replace('@user', '@' + user.split('@')[0]);
-            if (userPrefix && chat.antiForeign && botTt.restrict && isBotAdminNn && action === 'add') {
-              const responseb = await m.conn.groupParticipantsUpdate(id, [user], 'remove');
-              if (responseb[0].status === '404') return;
-              await m.conn.sendMessage(id, {
-                text: `@${user.split('@')[0]} Não é permitido números estrangeiros`,
-                mentions: [user],
-              });
-              return;
+      if (chat.welcome) {
+        if (!chat?.isBanned) {
+          const groupMetadata = await m.conn.groupMetadata(id) || (conn.chats[id] || {}).metadata;
+          for (const user of participants) {
+            try {
+              const antiForeign = JSON.parse(fs.readFileSync('./src/antiForeign.json'));
+              const userPrefix = antiForeign.some((prefix) => user.startsWith(prefix));
+              const botTt2 = groupMetadata.participants.find((u) => m.conn.decodeJid(u.id) == m.conn.user.jid) || {};
+              const isBotAdminNn = botTt2?.admin === 'admin' || false;
+
+              text = (action === 'add' ? (chat.sWelcome || this.welcome || conn.welcome || 'Bem vindo, @user!')
+                  .replace('@subject', await m.conn.getName(id))
+                  .replace('@desc', groupMetadata.desc?.toString() || 'Sem descrição') :
+                (chat.sBye || this.bye || conn.bye || 'Tchau, @user!')).replace('@user', '@' + user.split('@')[0]);
+
+              if (userPrefix && chat.antiForeign && botTt.restrict && isBotAdminNn && action === 'add') {
+                const responseb = await m.conn.groupParticipantsUpdate(id, [user], 'remove');
+                if (responseb[0].status === '404') return;
+                await m.conn.sendMessage(id, {
+                  text: `@${user.split('@')[0]} Não é permitido números estrangeiros`,
+                  mentions: [user],
+                });
+                return;
+              }
+              await m.conn.sendMessage(id, '', '', text, null, false, {mentions: [user]});
+            } catch (e) {
+
             }
-            await m.conn.sendMessage(id, apii.data, '', text, null, false, {mentions: [user]});
           }
         }
       }

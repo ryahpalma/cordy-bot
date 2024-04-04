@@ -8,121 +8,86 @@ const handler = async (m, {
   isROwner,
 }) => {
   const optionsFull = `*Comandos*\n 
-*Opção:* WELCOME
+*Título:* Boas Vindas
 *Comando:* ${usedPrefix + command} welcome
 *Descrição:* Ativa ou desativa a função de boas vindas no grupo.
 
 --------------------------------
 
-*Opção:* 🔗 | ANTILINK
+*Título:* Proibir Links v1
 *Comando:* ${usedPrefix + command} antilink
 *Descrição:* Permite ou não permite aos membros do grupo a enviar links de WhatsApp
 *Nota:* Precisa da função restrict habilitada
 
 --------------------------------
 
-*Opção:* 🔗 | ANTILINK 2
+*Título:* Proibir Links v2
 *Comando:* ${usedPrefix + command} antilink2
 *Descrição:* Permite ou não permite aos membros do grupo a enviar links que comecem com HTTPS
 *Nota:* Precisa da função restrict habilitada
 
 --------------------------------
 
-*Opção:* 🔎 | DETECT
+*Título:* Detectar Mensagens v1
 *Comando:* ${usedPrefix + command} detect
 *Descrição:* Ativa ou desativa as notificações de grupos
 
 --------------------------------
 
-*Opção:* 🔎 | DETECT 2
+*Título:* Detectar Mensagens v2
 *Comando:* ${usedPrefix + command} detect2
 *Descrição:* Detecta todas notificações do grupo e possui uma gestão melhor
 
 --------------------------------
 
-*Opção:* 🔊 | AUDIOS
+*Título:* Permissão de Áudios
 *Comando:* ${usedPrefix + command} audios
 *Descrição:* Permite ou não permite aos membros do grupo a enviar áudios
 
 --------------------------------
 
-*Opção:* 👾 | AUTOSTICKER
+*Título:* Figurinhas Automáticas
 *Comando:* ${usedPrefix + command} autosticker 
-*Descrição:* Crie figurinha de qualquer imagem enviada ao grupo
+*Descrição:* Crie automaticamente figurinha de qualquer imagem enviada ao grupo
 
 --------------------------------
 
-*Opção:* ❌ | ANTIVIEWONCE 
+*Título:* Previnir Visualização Única
 *Comando:* ${usedPrefix + command} antiviewonce
-*Descrição:* Todas mensagens enviadas no modo de visualização única serão reenviadas
+*Descrição:* Todas mídias enviadas no modo de visualização única serão reenviadas
 
 --------------------------------
 
-*Opção:* 🤬 | ANTITOXIC
+*Título:* Anti Mensagens Tóxicas
 *Comando:* ${usedPrefix + command} antitoxic
 *Descrição:* Detecta mensagens proibidas e envia um aviso ao membro
 *Nota:* Precisa da função restrict habilitada
 
 --------------------------------
 
-*Opção:* 🕸️ | ANTILOCK
+*Título:* Anti Mensagens de Trava
 *Comando:* ${usedPrefix + command} antilock
 *Descrição:* Detecta mensagens que travam o grupo e evita problemas
 *Nota:* Precisa da função restrict habilitada
 
 --------------------------------
 
-*Opção:* 👎 | ANTIARABES
-*Comando:* ${usedPrefix + command} antiarabes
-*Descrição:* Si un numero árabe se uné al grupo, el Bot lo elimina automaticamente.
-*Nota:* Se necesita tener activo el welcome y el restrict.
-
---------------------------------
-
-*Opção:* 👎 | ANTIARABES 2
-*Comando:* ${usedPrefix + command} antiarabes2
-*Descrição:* Si un numero árabe escribe en el grupo, el Bot lo elimina automaticamente.
+*Título:* Proibir Estrangeiros
+*Comando:* ${usedPrefix + command} antiforeigns
+*Descrição:* Irá remover qualquer estrangeiro automaticamente do grupo
 *Nota:* Precisa da função restrict habilitada
 
 --------------------------------
 
-*Opção:* 👑 | MODOADMIN
-*Comando:* ${usedPrefix + command} modoadmin
-*Descrição:* El bot solo responderá a los mensajes enviados por los admins. del grupo.
+*Título:* Modo Administrador
+*Comando:* ${usedPrefix + command} adminmode
+*Descrição:* Irá responder apenas mensagens dos administradores
 
 --------------------------------
 
-*Opção:* 🛡️ | ANTIDELETE
+*Título:* Prevenir Mensagens Deletadas
 *Comando:* ${usedPrefix + command} antidelete
-*Descrição:* El bot detecta cuando un usuario elimina un mensaje y lo reenvía.
-
---------------------------------
-
-*Opção:* 🔊 | AUDIOS_BOT
-*Comando:* ${usedPrefix + command} audios_bot
-*Descrição:* Se desactivan los audios del Bot del menuaudios para todos los chats privados.
-*Nota:* Este comando solo puede ser usado por el/los propietario(s) del bot.
-
---------------------------------
-
-*Opção:* 🤖 | MODOIA
-*Comando:* ${usedPrefix + command} modoia
-*Descrição:* Se activa el modo "Inteligencia Artificial" con ChatGPT en todos los chats privados.
-*Nota:* Este comando solo puede ser usado por el/los propietario(s) del bot.
-
---------------------------------
-
-*Opção:* ⏳ | ANTISPAM
-*Comando:* ${usedPrefix + command} antispam
-*Descrição:* El Bot detecta cuando un usuario hace spam de comando y lo banea por 5 segundos y lo advierte.
-*Nota:* Este comando solo puede ser usado por el/los propietario(s) del bot.
-
---------------------------------
-
-*Opção:*  | ANTIPRIVATE
-*Comando:* ${usedPrefix + command} antiprivado
-*Descrição:* El Bot bloquerá a las personas que escriban al privado del Bot. 
-*Nota:* Este comando solo puede ser usado por el/los propietario(s) del bot.`.trim();
+*Descrição:* Mensagens deletadas serão reenviadas`.trim();
 
   const isEnable = /true|enable|(turn)?on|1/i.test(command);
   const chat = global.db.data.chats[m.chat];
@@ -248,14 +213,14 @@ const handler = async (m, {
       }
       chat.porn = isEnable;
       break;
-    case 'modoadmin':
+    case 'adminmode':
       if (m.isGroup) {
         if (!(isAdmin || isROwner || isOwner)) {
           global.dfail('admin', m, conn);
           throw false;
         }
       }
-      chat.modoadmin = isEnable;
+      chat.adminmode = isEnable;
       break;
     case 'autosticker':
       if (m.isGroup) {
@@ -282,30 +247,6 @@ const handler = async (m, {
         throw false;
       }
       bot.restrict = isEnable;
-      break;
-    case 'audios_bot':
-      isAll = true;
-      if (!(isROwner || isOwner)) {
-        global.dfail('owner', m, conn);
-        throw false;
-      }
-      bot.audios_bot = isEnable;
-      break;
-    case 'modoia':
-      isAll = true;
-      if (!(isROwner || isOwner)) {
-        global.dfail('owner', m, conn);
-        throw false;
-      }
-      bot.modoia = isEnable;
-      break;
-    case 'nyimak':
-      isAll = true;
-      if (!isROwner) {
-        global.dfail('rowner', m, conn);
-        throw false;
-      }
-      global.opts['nyimak'] = isEnable;
       break;
     case 'autoread':
       isAll = true;
@@ -350,7 +291,7 @@ const handler = async (m, {
       }
       bot.antiCall = isEnable;
       break;
-    case 'antiprivado':
+    case 'antiprivate':
       isAll = true;
       if (!(isROwner || isOwner)) {
         global.dfail('owner', m, conn);
@@ -384,7 +325,7 @@ const handler = async (m, {
       }
       chat.antilock = isEnable;
       break;
-    case 'antiForeign':
+    case 'antiforeign':
       if (m.isGroup) {
         if (!(isAdmin || isROwner || isOwner)) {
           global.dfail('admin', m, conn);

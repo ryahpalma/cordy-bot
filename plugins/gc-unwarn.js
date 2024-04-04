@@ -1,11 +1,13 @@
 const handler = async (m, {conn, text, command, usedPrefix}) => {
   let who;
   let message;
+
   if (m.isGroup) {
     who = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : text;
   } else {
     who = m.chat;
   }
+
   const user = global.db.data.users[who];
   const warntext = `Mencione ou marque um membro para retirar uma advertência\n\nExemplo: _${usedPrefix + command} @${global.numberexample}_`;
   if (!who) throw (warntext);

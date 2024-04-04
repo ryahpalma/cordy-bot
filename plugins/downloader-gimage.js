@@ -1,7 +1,7 @@
 import {googleImage} from '@bochilteam/scraper';
 
 const handler = async (m, {conn, text, usedPrefix, command}) => {
-  if (!text) throw `Para usar o comando envie por exemplo _${usedPrefix + command} Minecraft_`;
+  if (!text) throw `Para usar o comando envie por exemplo _${usedPrefix + command} Linus Torvalds_`;
   const res = await googleImage(text);
   const image = await res.getRandom();
   const link = image;
@@ -14,5 +14,5 @@ const handler = async (m, {conn, text, usedPrefix, command}) => {
 };
 handler.help = ['image <query>'];
 handler.tags = ['internet', 'tools'];
-handler.command = /^(google|image|img)$/i;
+handler.command = /^gimage$/i;
 export default handler;

@@ -21,7 +21,7 @@ const handler = async (m, {conn, text, participants}) => {
       }
     }
   }
-  if (total == 0) return conn.reply(m.chat, `Impressionante, não há nenhum fantasma por aqui! Todos membros são ativos`, m);
+  if (total == 0) return conn.reply(m.chat, `Impressionante, não há nenhum fantasma por aqui. Todos membros são ativos!`, m);
   m.reply(`*Inativos*\n\n*Total de membros:* ${sum}\n\n*Lista de Fantasmas:*\n${sider.map((v) => '@' + v.replace(/@.+/, '')).join('\n')}`, null, {mentions: sider});
 };
 handler.command = /^ghosts$/i;

@@ -1,4 +1,3 @@
-
 const {downloadContentFromMessage} = (await import('@whiskeysockets/baileys'));
 
 const handler = async (m, {conn}) => {

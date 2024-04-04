@@ -2,24 +2,19 @@ const handler = async (m, {
   isOwner,
   isAdmin,
   conn,
-  text,
   participants,
-  args,
-  command,
-  usedPrefix,
 }) => {
   if (!(isAdmin || isOwner)) {
     global.dfail('admin', m, conn);
     throw false;
   }
 
-  let message = `*Atenção Mensagem Importante*`;
   conn.sendMessage(m.chat, {
-    text: message,
-    mentions: participants.map((a) => a.id),
+    text: '*Atenção Mensagem Importante*',
+    mentions: participants.map((participant) => participant.id),
   });
 };
-handler.help = ['tag-all <mesaje>'];
+handler.help = ['tagall'];
 handler.tags = ['group'];
 handler.command = /^tagall$/i;
 handler.admin = true;

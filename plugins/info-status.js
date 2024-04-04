@@ -18,9 +18,9 @@ const handler = async (m, {conn, usedPrefix}) => {
   const responseTime = (newPerformance - oldPerformance).toFixed(2);
   const info = `
 Resposta: ${responseTime}s
-Funcionando: ${uptime}
-Prefixo: ${usedPrefix}
 Utilizando: ${memory}MB
+Executando há: ${uptime}
+Prefixo: ${usedPrefix}
 Modo: ${self ? 'privado' : 'público'}
 Total de usuários: ${users}
 Conversas privadas: ${chats.length}
