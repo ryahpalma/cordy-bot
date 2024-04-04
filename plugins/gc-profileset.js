@@ -6,7 +6,7 @@ const handler = async (m, {conn, usedPrefix, command}) => {
     if (!img) throw 'Adicione uma imagem';
     await conn.updateProfilePicture(m.chat, img).then(_ => m.reply('Imagem do grupo alterada ✅'));
   } else {
-    throw 'Adicione uma imagem';
+    m.reply('Adicione uma imagem');
   }
 };
 handler.command = /^profileset?$/i;

@@ -3,7 +3,7 @@ const handler = async (m, {conn, text, isROwner, isOwner}) => {
     global.db.data.chats[m.chat].sWelcome = text;
     m.reply('Mensagem de boas vindas alterada');
   } else {
-    throw 'Adicione a mensagem de boas vindas corretamente';
+    m.reply('Adicione a mensagem de boas vindas corretamente');
   }
 };
 handler.help = ['welcomeset <text>'];

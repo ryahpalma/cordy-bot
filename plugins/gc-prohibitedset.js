@@ -3,7 +3,7 @@ const handler = async (m, {conn, text, isROwner, isOwner}) => {
     global.db.data.chats[m.chat].sProhibited = text;
     m.reply('Mensagem proibidas foram alteradas');
   } else {
-    throw 'Adicione as mensagens proibidas corretamente';
+    m.reply('Adicione as mensagens proibidas corretamente');
   }
 };
 handler.help = ['prohibitedset <text>'];

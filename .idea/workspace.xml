@@ -4,31 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9be182f0-f00f-4201-86aa-08b9589d916b" name="Changes" comment="try to send image without return bin">
-      <change afterPath="$PROJECT_DIR$/plugins/gc-prohibitedset.js" afterDir="false" />
+    <list default="true" id="9be182f0-f00f-4201-86aa-08b9589d916b" name="Changes" comment="add a lot of new plugins">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/handler.js" beforeDir="false" afterPath="$PROJECT_DIR$/handler.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/_antiviewonce.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/_antiviewonce.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/_gc-good.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/_autoGreetings.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/_simsimi.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/_simSimi.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/config-functions.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/config-functions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/downloader-google-images.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/downloader-gimage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/downloader-pinterest.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/downloader-pinterest.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/gc-formset.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/gc-formset.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/gc-ghosts.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/gc-ghosts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/gc-hidetag.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/gc-hidetag.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/gc-info.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/gc-groupinfo.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/gc-list-warn.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/gc-warnlist.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/gc-reset-link.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/gc-linkreset.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/gc-profileset.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/gc-profileset.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/gc-prohibitedset.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/gc-prohibitedset.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/plugins/gc-rules.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/gc-rules.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/gc-rulesset.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/gc-rulesset.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/gc-tagall.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/gc-tagall.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/gc-unwarn.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/gc-unwarn.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/info-owner.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/info-owner.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/info-ping.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/info-ping.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/info-status.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/info-status.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/tool-view.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/tool-view.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tmp/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/gc-welcomeset.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/gc-welcomeset.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -149,7 +130,7 @@
       <workItem from="1710400983332" duration="95000" />
       <workItem from="1711940533337" duration="598000" />
       <workItem from="1712186505409" duration="590000" />
-      <workItem from="1712249459704" duration="10564000" />
+      <workItem from="1712249459704" duration="12146000" />
     </task>
     <task id="LOCAL-00001" summary="add tmp folder">
       <option name="closed" value="true" />
@@ -279,7 +260,15 @@
       <option name="project" value="LOCAL" />
       <updated>1709417019306</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="add a lot of new plugins">
+      <option name="closed" value="true" />
+      <created>1712265092856</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1712265092856</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -298,6 +287,7 @@
     <MESSAGE value="improve screenshot/weather plugin" />
     <MESSAGE value="improve screenshot plugin" />
     <MESSAGE value="try to send image without return bin" />
-    <option name="LAST_COMMIT_MESSAGE" value="try to send image without return bin" />
+    <MESSAGE value="add a lot of new plugins" />
+    <option name="LAST_COMMIT_MESSAGE" value="add a lot of new plugins" />
   </component>
 </project>
