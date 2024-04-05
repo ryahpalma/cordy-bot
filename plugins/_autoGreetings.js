@@ -21,15 +21,17 @@ const goodEveningMessages = [
 ];
 
 handler.before = async (m) => {
-  let replyMessage;
-  if (/^(bom\s+dia)$/i.test(m.text)) {
-    replyMessage = goodMorningMessages[Math.floor(Math.random() * goodMorningMessages.length)];
-  } else if (/^(boa\s+tarde)$/i.test(m.text)) {
-    replyMessage = goodAfternoonMessages[Math.floor(Math.random() * goodAfternoonMessages.length)];
-  } else if (/^(boa\s+noite)$/i.test(m.text)) {
-    replyMessage = goodEveningMessages[Math.floor(Math.random() * goodEveningMessages.length)];
+  if (/(bom\s+dia)|(boa\s+tarde)|(boa\s+noite)/i.test(m.text)) {
+    let replyMessage;
+    if (/^(bom\s+dia)$/i.test(m.text)) {
+      replyMessage = goodMorningMessages[Math.floor(Math.random() * goodMorningMessages.length)];
+    } else if (/^(boa\s+tarde)$/i.test(m.text)) {
+      replyMessage = goodAfternoonMessages[Math.floor(Math.random() * goodAfternoonMessages.length)];
+    } else if (/^(boa\s+noite)$/i.test(m.text)) {
+      replyMessage = goodEveningMessages[Math.floor(Math.random() * goodEveningMessages.length)];
+    }
+    m.reply(replyMessage);
   }
-  m.reply(replyMessage);
 };
 
 export default handler;

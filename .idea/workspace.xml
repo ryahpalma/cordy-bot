@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9be182f0-f00f-4201-86aa-08b9589d916b" name="Changes" comment="add a lot of new plugins">
+    <list default="true" id="9be182f0-f00f-4201-86aa-08b9589d916b" name="Changes" comment="add gitignore to tmp">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/plugins/_autoGreetings.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/_autoGreetings.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/gc-delete.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/gc-delete.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -129,7 +128,7 @@
       <workItem from="1711940533337" duration="598000" />
       <workItem from="1712186505409" duration="590000" />
       <workItem from="1712249459704" duration="12146000" />
-      <workItem from="1712319938349" duration="1181000" />
+      <workItem from="1712319938349" duration="1370000" />
     </task>
     <task id="LOCAL-00001" summary="add tmp folder">
       <option name="closed" value="true" />
@@ -267,7 +266,23 @@
       <option name="project" value="LOCAL" />
       <updated>1712265092856</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="improve autoGreetings and gc-delete">
+      <option name="closed" value="true" />
+      <created>1712340114762</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1712340114762</updated>
+    </task>
+    <task id="LOCAL-00019" summary="add gitignore to tmp">
+      <option name="closed" value="true" />
+      <created>1712340159587</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1712340159587</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -287,6 +302,8 @@
     <MESSAGE value="improve screenshot plugin" />
     <MESSAGE value="try to send image without return bin" />
     <MESSAGE value="add a lot of new plugins" />
-    <option name="LAST_COMMIT_MESSAGE" value="add a lot of new plugins" />
+    <MESSAGE value="improve autoGreetings and gc-delete" />
+    <MESSAGE value="add gitignore to tmp" />
+    <option name="LAST_COMMIT_MESSAGE" value="add gitignore to tmp" />
   </component>
 </project>
