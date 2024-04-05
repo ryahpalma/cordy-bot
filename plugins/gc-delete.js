@@ -1,7 +1,5 @@
-/* Creditos a https://github.com/FG98F */
-
 const handler = async (m, {conn, usedPrefix, command}) => {
-  if (!m.quoted) throw `Responsa a mensagem que deseja deletar`;
+  if (!m.quoted) throw `Responda a mensagem que deseja deletar`;
   try {
     const participantId = m.message.extendedTextMessage.contextInfo.participant;
     const userId = m.message.extendedTextMessage.contextInfo.stanzaId;
